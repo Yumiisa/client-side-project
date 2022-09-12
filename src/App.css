@@ -1,0 +1,93 @@
+
+.App {
+  text-align: center;
+}
+.app, p{
+  color: black;
+  font-weight: bolder;
+  font-size: larger;
+  text-align: center;
+}
+.songs{
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ 
+ justify-content: space-between;
+ align-items: center;
+  
+  
+}
+ .myvideo{
+display: flex;
+padding: 10px;
+border-radius:10px ;
+ transition: all 0.4s ease;
+ }
+
+.myvideo:hover{
+  transform:scale(1.1)
+}
+.navbar ul{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+ 
+
+  
+}
+  a{
+
+        color: rgb(37, 34, 34);
+        text-decoration: none;
+         margin: 0px 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+          
+       
+        border-radius: 10px;
+        font-size: 22px;
+        transition: all 0.5s ease;
+        list-style: none;
+      }
+         
+
+      a:hover{
+            color:#eba118
+            }
+
+ label{
+  color: rgb(15, 15, 15);
+  font-size: medium;
+  text-transform: capitalize;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+ }
+input{
+  display: flex;
+  width: 40%;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+
+  margin-left: 30%;
+  font-size: medium;
+  text-transform: capitalize;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 
+input:hover{
+  color:#eba118
+}
+button{
+  width: 20%;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: medium;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px black solid;
+  text-transform: capitalize;
+}
