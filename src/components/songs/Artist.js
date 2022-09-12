@@ -56,6 +56,8 @@ const setData = (artist) => {
         <input
           name="image"
           type="file"
+          accept='image/*'
+          multiple 
           value={photo_url}
           onChange={(e) => setPhotoUrl(e.target.value)}
         />

@@ -7,6 +7,7 @@ import {BrowserRouter as Router,Route, Routes} from "react-router-dom"
 import Navbar from './Navbar';
 import DeleteArtist from './components/songs/DeleteArtist';
 import Artist from './components/songs/Artist';
+import DisplayArtist from './components/songs/DisplayArtist';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/' exact element={<Song />} />
         <Route path='/artist' element={<Artist />} />
          <Route path='/deleteArtist' element={<DeleteArtist />} />
+         <Route path='/displayArtist' element={<DisplayArtist />} />
          
       </Routes>
        
