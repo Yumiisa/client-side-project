@@ -9,6 +9,7 @@ const Navbar = () => {
         <Link to="/artist"><li>Artist</li></Link>
         <Link to='/deleteArtist'><li>delete artist</li></Link>
         <Link to='/displayArtist'><li>display artist</li></Link>
+         {/* <Link to='/updateArtist'><li>update artist</li></Link> */}
     </ul>
       
     </div>

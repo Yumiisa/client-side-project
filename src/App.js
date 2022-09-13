@@ -2,6 +2,7 @@
 
 import './App.css';
 import Song from './components/songs/Song';
+// import UpdateArtist from './components/songs/UpdateArtist';
 import {BrowserRouter as Router,Route, Routes} from "react-router-dom"
 // import Navbar from './Navbar'
 import Navbar from './Navbar';
@@ -20,6 +21,8 @@ function App() {
         <Route path='/artist' element={<Artist />} />
          <Route path='/deleteArtist' element={<DeleteArtist />} />
          <Route path='/displayArtist' element={<DisplayArtist />} />
+         {/* <Route path='/updateArtist' element={<UpdateArtist />} /> */}
+         
          
       </Routes>
        

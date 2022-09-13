@@ -91,3 +91,35 @@ button{
   border: 1px black solid;
   text-transform: capitalize;
 }
+.artists{
+width: 70%;
+ display: grid;
+ grid-template-columns: 200px auto auto auto auto;
+ grid-template-rows: auto auto auto auto;
+ gap:15px;
+ align-items: center;
+ 
+  
+}
+.artists img{
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 80px;
+padding: 10px;
+border-radius:10px ;
+}
+.name{
+  position: absolute;
+  top: 74px;
+}
+.image{
+  position:absolute;
+  top:79px;
+  left:15%
+}
+.origin{
+  position: absolute;
+  top: 84px;
+  left:33%
+}
