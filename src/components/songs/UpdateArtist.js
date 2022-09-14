@@ -14,18 +14,18 @@ const UpdateArtist = ({id,artists,setArtists,name}) => {
    }
     const handleUpdate=(e)=>{
          e.preventDefault()
-    fetch(`http://localhost:9292/artist/${id}`,{
+    fetch(`https://localhost:9292/artist/${id}`,{
        
         method: "PATCH",
         headers: {
                  "Content-Type": "application/json"
             },
-        body: JSON.stringify({name:nameData})
+        body: JSON.stringify({nameData:nameData})
         
     })
     .then(resp=>resp.json())
     .then(data=>{
-        console.log(data)
+       
        const newArtists = artists.map(artist=>{
         if (artist.id ===id){
             return data
@@ -42,7 +42,7 @@ const UpdateArtist = ({id,artists,setArtists,name}) => {
 
   return (
     <div>
-        {showArtist ?<form onSubmit={handleUpdate}>
+        {showArtist ?<form onSubmit={handleUpdate} className="form">
             <input type="text" value={nameData} onChange={handleChange}/>
             <input type='submit'value="save"/>
 

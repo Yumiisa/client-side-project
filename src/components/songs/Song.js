@@ -1,13 +1,10 @@
 import React, {useEffect,useState} from 'react'
 import axios from 'axios'
+import useFetch from './useFetch'
 const Song = () => {
-    const [songs, setSongs]=useState([])
-    useEffect(() => { 
-        axios.get("http://localhost:9292/songs")
-        .then((res)=>{
-        setSongs(res.data)
-        })
-    }, [])
+  
+    const{  songs,loading,error}=useFetch("http://localhost:9292/songs")
+    
     
   return (
     <div className='songs'>
