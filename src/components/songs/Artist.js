@@ -24,9 +24,7 @@ const handleSubmit = (e) => {
 
   
 }
-const setData = (artist) => {
-   console.log(artist);
-}
+
       
     return (
         <div>
@@ -65,9 +63,7 @@ const setData = (artist) => {
 
       <button type="submit">Add to List</button>
     </form>
-      <Link to='/updateArtist'>
-         <button onClick={() => setData(artists)}>Update</button>
-      </Link>
+      
         </div>
     )
    

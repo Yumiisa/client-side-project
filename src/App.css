@@ -112,14 +112,29 @@ border-radius:10px ;
 .name{
   position: absolute;
   top: 74px;
+  text-transform: capitalize;
 }
 .image{
   position:absolute;
   top:79px;
-  left:15%
+  left:29%;
+  text-transform: capitalize;
+
 }
 .origin{
   position: absolute;
   top: 84px;
-  left:33%
+  left:45%;
+  text-transform: capitalize;
+}
+.delete{
+  background-color: red;
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+}
+.update{
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
 }

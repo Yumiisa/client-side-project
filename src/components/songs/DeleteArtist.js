@@ -4,9 +4,9 @@ import DisplayArtist from './DisplayArtist'
 
 
 const DeleteArtist = ({id,artists,setArtists}) => {
-  console.log(id)
+
      const handleDelete=()=>{
-        console.log("delete")
+      
         axios.delete(`http://localhost:9292/artists/${id}`)
       
         .then(()=>{
@@ -23,7 +23,7 @@ const DeleteArtist = ({id,artists,setArtists}) => {
     }
   return (
     <div>
-   <button onClick={handleDelete}>delete artist </button>
+   <button onClick={handleDelete} className="delete">delete artist </button>
     </div>
   )
 }

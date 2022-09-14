@@ -15,24 +15,8 @@ const DisplayArtist = ({deleteArtist}) => {
         setArtists(res.data)
         })
     }, [])
-    // console.log(artists);
- const update =(id)=>{
-    console.log(id)
-    axios.patch(`http://localhost:9292/artists/${id}`, {
-         name:name,
-    photo_url:photo_url,
-    nationality:nationality
-    })
-    const updateArtist=artists.map((artist)=>{
-        if (artist.id ===id){
-       return id
-        }
-        else{
-            return artist
-        }
-    })
-    setArtists(updateArtist)
- }
+   
+
     
   return (
     <div className="displa-artist">
@@ -47,11 +31,13 @@ const DisplayArtist = ({deleteArtist}) => {
             <div className="artists" key={artist.id}>
              
                 <h4>{artist.name}</h4>
+                <UpdateArtist id={artist.id} artists={artists} setArtists={setArtists} name={artist.name} />
               
             <img src={artist.photo_url} alt="artist"/>
             <h4>{artist.nationality}</h4>
-            
-        <button onClick={()=>update(artist.id)}>update</button>
+           
+            {/* <Link to='/updateArtist'><button className="update">update artist</button></Link>  */}
+        {/* <button onClick={()=>update(artist.id)}>update</button> */}
           <DeleteArtist id={artist.id} artists={artists} setArtists={setArtists} />
        
             </div>
