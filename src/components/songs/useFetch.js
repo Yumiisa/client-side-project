@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, {useEffect,useState} from 'react'
 
 const useFetch = (url) => {
-     const[songs, setSongs]=useState([])
+     const[datas, setDatas]=useState([])
      const [loading,setLoading]=useState(false)
     const [error,setError]=useState(null)
   useEffect(() => {
@@ -10,7 +10,7 @@ const useFetch = (url) => {
     
         axios.get(url)
         .then((response)=>{
-            setSongs(response.data)
+            setDatas(response.data)
         })
         .catch((err)=>{
             setError(err)
@@ -21,7 +21,7 @@ const useFetch = (url) => {
     
   }, [url])
   return{
-    songs,loading,error
+    datas,loading,error
   }
 }
 

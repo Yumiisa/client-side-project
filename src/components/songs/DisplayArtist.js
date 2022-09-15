@@ -6,9 +6,7 @@ import UpdateArtist from './UpdateArtist'
 
 const DisplayArtist = ({deleteArtist}) => {
     const[artists,setArtists] = useState([])
-    const[name,setName]=useState('')
-    const[photo_url,setPhotoUrl]=useState('')
-    const[nationality,setNationality]=useState('')
+    
     useEffect(() => { 
         axios.get("http://localhost:9292/artists")
         .then((res)=>{

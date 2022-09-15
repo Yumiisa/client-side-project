@@ -14,13 +14,13 @@ const UpdateArtist = ({id,artists,setArtists,name}) => {
    }
     const handleUpdate=(e)=>{
          e.preventDefault()
-    fetch(`https://localhost:9292/artist/${id}`,{
+    fetch(`http://localhost:9292/artist/${id}`,{
        
         method: "PATCH",
         headers: {
                  "Content-Type": "application/json"
             },
-        body: JSON.stringify({nameData:nameData})
+        body: JSON.stringify({name:nameData})
         
     })
     .then(resp=>resp.json())
@@ -42,9 +42,9 @@ const UpdateArtist = ({id,artists,setArtists,name}) => {
 
   return (
     <div>
-        {showArtist ?<form onSubmit={handleUpdate} className="form">
+        {showArtist ?<form onSubmit={handleUpdate} className="update">
             <input type="text" value={nameData} onChange={handleChange}/>
-            <input type='submit'value="save"/>
+            <input type='submit'value="save" className='save'/>
 
         </form>:null }
         

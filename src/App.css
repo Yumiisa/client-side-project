@@ -140,8 +140,13 @@ border-radius:10px ;
   width: 70%;
   height: 50px;
   border-radius: 10px;
-}
+} 
 .update{
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+}
+.save{
   width: 50%;
   height: 50px;
   border-radius: 10px;
